@@ -1,21 +1,20 @@
 require 'rspec_helper'
-require 'rbconfig'
 
 describe 'Firefox Grid' do
   before(:all) do
-    # Selenium::WebDriver::Firefox::Binary.path = 'c:\\Program Files\\Mozilla Firefox\\firefox.exe'
-    caps = Selenium::WebDriver::Remote::W3CCapabilities.firefox
-    @selenium = Selenium::WebDriver.for(:remote, desired_capabilities: caps)
+    @selenium = Selenium::WebDriver.for(:remote, desired_capabilities: :firefox)
   end
 
   after(:all) do
     @selenium.quit
   end
 
-  res = if MAC || WINDOWS
+  res = if MACOSX
           '1024 x 768'
+        elsif WINDOWS
+          '1440 x 900'
         else
-          '1280 x 1024' # xvfb
+          '1280 x 1024'
         end
 
   it "Should return display resolution of #{res}" do
