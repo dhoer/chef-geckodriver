@@ -91,25 +91,25 @@ describe 'geckodriver::default' do
     end
 
     it 'creates directory' do
-      expect(chef_run).to create_directory('/opt/geckodriver/geckodriver-v0.14.0-macos64')
+      expect(chef_run).to create_directory('/opt/geckodriver/geckodriver-v0.14.0-macos')
     end
 
     it 'downloads driver' do
       expect(chef_run).to create_remote_file(
-        'download https://github.com/mozilla/geckodriver/releases/download/v0.14.0/geckodriver-v0.14.0-macos64.tar.gz'
+        'download https://github.com/mozilla/geckodriver/releases/download/v0.14.0/geckodriver-v0.14.0-macos.tar.gz'
       ).with(
-        path: "#{Chef::Config[:file_cache_path]}/geckodriver-v0.14.0-macos64.tar.gz",
-        source: 'https://github.com/mozilla/geckodriver/releases/download/v0.14.0/geckodriver-v0.14.0-macos64.tar.gz'
+        path: "#{Chef::Config[:file_cache_path]}/geckodriver-v0.14.0-macos.tar.gz",
+        source: 'https://github.com/mozilla/geckodriver/releases/download/v0.14.0/geckodriver-v0.14.0-macos.tar.gz'
       )
     end
 
     it 'untar geckodriver' do
-      expect(chef_run).to_not run_execute('untar /var/chef/cache/geckodriver-v0.14.0-macos64.tar.gz')
+      expect(chef_run).to_not run_execute('untar /var/chef/cache/geckodriver-v0.14.0-macos.tar.gz')
     end
 
     it 'links driver' do
       expect(chef_run).to create_link('/usr/bin/geckodriver').with(
-        to: '/opt/geckodriver/geckodriver-v0.14.0-macos64/geckodriver'
+        to: '/opt/geckodriver/geckodriver-v0.14.0-macos/geckodriver'
       )
     end
   end

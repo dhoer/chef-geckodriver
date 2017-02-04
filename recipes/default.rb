@@ -7,6 +7,7 @@ when 'windows'
   ext = 'zip'
 when 'mac_os_x'
   os = 'macos'
+  bit = ''
 else
   os = 'linux'
 end
