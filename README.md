@@ -1,10 +1,14 @@
-# Selenium Gecko Driver Cookbook
+# Selenium GeckoDriver Cookbook
 
-[![Cookbook Version](http://img.shields.io/cookbook/v/geckodriver.svg?style=flat-square)][supermarket]
-[![Build Status](http://img.shields.io/travis/dhoer/chef-geckodriver.svg?style=flat-square)][travis]
+[![Cookbook Version](http://img.shields.io/cookbook/v/geckodriver.svg?style=flat-square)][cookbook]
+[![linux](http://img.shields.io/travis/dhoer/chef-geckodriver/master.svg?label=linux&style=flat-square)][linux]
+[![osx](http://img.shields.io/travis/dhoer/chef-geckodriver/macosx.svg?label=macosx&style=flat-square)][osx]
+[![win](https://img.shields.io/appveyor/ci/dhoer/chef-geckodriver/master.svg?label=windows&style=flat-square)][win]
 
-[supermarket]: https://supermarket.chef.io/cookbooks/geckodriver
-[travis]: https://travis-ci.org/dhoer/chef-geckodriver
+[cookbook]: https://supermarket.chef.io/cookbooks/geckodriver
+[linux]: https://travis-ci.org/dhoer/chef-geckodriver
+[osx]: https://travis-ci.org/dhoer/chef-geckodriver/branches
+[win]: https://ci.appveyor.com/project/dhoer/chef-geckodriver
 
 Installs geckodriver (https://github.com/mozilla/geckodriver). 
 
