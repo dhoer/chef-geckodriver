@@ -108,7 +108,7 @@ describe 'geckodriver::default' do
     end
 
     it 'links driver' do
-      expect(chef_run).to create_link('/usr/bin/geckodriver').with(
+      expect(chef_run).to create_link('/usr/local/bin/geckodriver').with(
         to: '/opt/geckodriver/geckodriver-v0.14.0-macos/geckodriver'
       )
     end
