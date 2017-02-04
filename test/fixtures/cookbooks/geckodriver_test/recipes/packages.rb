@@ -4,7 +4,6 @@ when 'debian'
   package 'gcc'
   package 'libffi-dev'
 when 'rhel'
-  include_recipe 'yum'
   package 'gcc'
   package 'libffi-devel'
 end
