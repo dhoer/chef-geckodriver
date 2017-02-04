@@ -19,9 +19,9 @@ Installs geckodriver (https://github.com/mozilla/geckodriver).
 
 ### Platforms
 
-- CentOS, RedHat
+- CentOS, RedHat, Fedora
 - Mac OS X
-- Ubuntu
+- Ubuntu, Debian
 - Windows
 
 ## Usage
