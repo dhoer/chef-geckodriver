@@ -23,6 +23,7 @@ end
 driver_path = "#{home}/#{name}"
 
 directory driver_path do
+  recursive true
   action :create
 end
 
