@@ -63,6 +63,10 @@ when 'windows'
     delim ::File::PATH_SEPARATOR
     value "#{home}/geckodriver.exe"
   end
+when 'mac_os_x'
+  link '/usr/local/bin/geckodriver' do
+    to "#{driver_path}/geckodriver"
+  end
 else # unix
   link '/usr/bin/geckodriver' do
     to "#{driver_path}/geckodriver"
