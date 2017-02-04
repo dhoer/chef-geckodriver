@@ -2,7 +2,7 @@ name 'geckodriver'
 maintainer 'Dennis Hoer'
 maintainer_email 'dennis.hoer@gmail.com'
 license 'MIT'
-description 'Marionette Selenium WebDriver for Firefox'
+description 'Selenium WebDriver for Mozilla Firefox'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 source_url 'https://github.com/dhoer/chef-geckodriver'
 issues_url 'https://github.com/dhoer/chef-geckodriver/issues'
