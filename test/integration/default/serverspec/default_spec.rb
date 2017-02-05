@@ -6,8 +6,8 @@ describe 'selenium::geckodriver' do
       it { should be_file }
     end
   else
-    describe file('/usr/bin/geckodriver') do
-      it { should be_symlink }
+    describe command('geckodriver -V') do
+      its(:stdout) { should match(/geckodriver/) }
     end
   end
 end

@@ -81,6 +81,5 @@ platforms:
 suites:
 - name: default
   run_list:
-    - geckodriver_test::packages
-    - geckodriver_test::default
+    - geckodriver::default
   attributes:
