@@ -14,12 +14,9 @@ platforms:
   - name: macosx-10.10
     driver:
       box: macosx-10.10
-    driver_config:
-      network:
-      - ["forwarded_port", {guest: 4444, host: 6447}]
 
 suites:
   - name: default
     run_list:
-      - recipe[geckodriver_test::default]
+      - geckodriver::default
     attributes:
