@@ -43,7 +43,7 @@ describe 'geckodriver::default' do
     it 'sets PATH' do
       expect(chef_run).to modify_env('geckodriver path').with(
         key_name: 'PATH',
-        value: 'C:/geckodriver/geckodriver.exe'
+        value: 'C:/geckodriver'
       )
     end
   end
