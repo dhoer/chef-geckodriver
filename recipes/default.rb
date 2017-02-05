@@ -61,7 +61,7 @@ when 'windows'
     key_name 'PATH'
     action :modify
     delim ::File::PATH_SEPARATOR
-    value "#{home}/geckodriver.exe"
+    value home
   end
 when 'mac_os_x'
   link '/usr/local/bin/geckodriver' do
